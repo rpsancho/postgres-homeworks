@@ -14,7 +14,7 @@ ORDERS_DATA = os.path.join(DATA_DIR, 'orders_data.csv')
 
 
 def write_csv_to_table(file_path: str, table_name: str, cursor):
-    with open(file_path, 'r', newline='') as csvfile:
+    with open(file_path, 'r', newline='', encoding='UTF-8') as csvfile:
         csvreader = csv.reader(csvfile)
 
         # get and skip header
