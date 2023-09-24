@@ -34,6 +34,7 @@ def main():
             write_csv_to_table(EMPLOYEES_DATA, 'employees', cur)
             write_csv_to_table(ORDERS_DATA, 'orders', cur)
         conn.commit()
+        conn.close()
 
 
 if __name__ == "__main__":
